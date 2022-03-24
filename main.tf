@@ -51,7 +51,7 @@ resource "google_compute_backend_service" "default" {
 }
 
 resource "google_compute_instance_template" "default" {
-  name         = "cdn-mig-template"
+  name_prefix  = "cdn-mig-template_"
   machine_type = "e2-small"
   tags         = ["allow-health-check"]
 
